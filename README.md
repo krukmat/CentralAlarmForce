@@ -16,7 +16,7 @@ This is a project is an intent integrate IOT Solutions in Salesforce with Things
          * Quick action to screen flow to manual update
 
 ##  Hardware
-![Schematics](https://raw.githubusercontent.com/krukmat/AlarmForce-Demo/mqtt/images/Hardware.png)
+![Schematics](https://raw.githubusercontent.com/krukmat/CentralAlarmForce/main/Arduino/images/hardware1.png?token=AAGOOYLUEJIDIAZSM4CY7MDANB5T6)
 
 ## General Schema
 ![Schematics](https://raw.githubusercontent.com/krukmat/CentralAlarmForce/main/Arduino/images/Schematics.png?token=AAGOOYLUEJIDIAZSM4CY7MDANB5T6)
