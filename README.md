@@ -16,10 +16,10 @@ This is a project is an intent integrate IOT Solutions in Salesforce with Things
          * Quick action to screen flow to manual update
 
 ##  Hardware
-![Schematics](https://raw.githubusercontent.com/krukmat/CentralAlarmForce/main/Arduino/images/hardware1.png?token=AAGOOYLUEJIDIAZSM4CY7MDANB5T6)
+![Schematics](https://github.com/krukmat/CentralAlarmForce/blob/390de5740e9e64eadbeb8ba5ed9c90c8c3ecb865/Arduino/images/hardware1.png)
 
 ## General Schema
-![Schematics](https://raw.githubusercontent.com/krukmat/CentralAlarmForce/main/Arduino/images/Schematics.png?token=AAGOOYLUEJIDIAZSM4CY7MDANB5T6)
+![Schematics](https://github.com/krukmat/CentralAlarmForce/blob/390de5740e9e64eadbeb8ba5ed9c90c8c3ecb865/Arduino/images/Schematics.png)
 
 ## Salesforce: 
 ![Schematics](https://raw.githubusercontent.com/krukmat/AlarmForce-Demo/mqtt/images/email%20alert.png)
