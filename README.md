@@ -1,6 +1,7 @@
 # CentralAlarmForce
 A new fork for AlarmForce. But with new features: Video streaming, photo Screenshots, noise detection in sensors
-This is a project is an intent integrate IOT Solutions in Salesforce with Thingspeak as proxy. The stack selected:
+This is a project is an intent integrate IOT Solutions in Salesforce with Thingspeak as proxy. Blynk integration to check the images through a simple ngrok configuration as well, 
+The stack selected:
 * IOT Proxy:
     * Thingspeak(MQTT)
 *  Hardware:
@@ -12,6 +13,8 @@ This is a project is an intent integrate IOT Solutions in Salesforce with Things
     * MQTT Client to map the events to Salesforce
 * Software:         
     * Arduino IDE
+    * Blynk connectivity.
+    * ngrok bridge 
     * Salesforce:
          * Custom Object: Sensor
 
