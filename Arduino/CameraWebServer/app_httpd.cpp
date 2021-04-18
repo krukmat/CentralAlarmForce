@@ -343,7 +343,8 @@ static String sendPhotoToServer(camera_fb_t * fb, String filename) {
    if(WiFi.status()== WL_CONNECTED){
     HTTPClient http;
     Serial.println(filename);
-    http.begin(serverName+"?filename="+filename);
+    String randomStr = String(random(0xffff), HEX);
+    http.begin(serverName+"?filename="+filename+"&rnd="+randomStr);
     Serial.println("Post image to: " + serverName);
     http.addHeader("Content-Type", "image/jpg");
     http.addHeader("Content-Disposition","form-data; name=\"imageFile\"; filename=\"esp32-cam.jpg\"");    
@@ -419,11 +420,14 @@ static esp_err_t capture_handler(httpd_req_t *req){
     
     long randNumber = random(3000);
     String filename = "file"+String(randNumber);
+    while (sendPhotoToServer(fb, filename) == ""){
+      Serial.println("retry to post "+filename);
+      delay(500);
+    }
     savePicture(fb, filename);
-    sendPhotoToServer(fb, filename);
     connect2MQTT();
     dataToPublish[0]=randNumber;
-    mqttPublish( writeChannelID, writeAPIKey, dataToPublish, fieldsToPublish );
+    mqttPublish( writeChannelID, writeAPIKey, dataToPublish, fieldsToPublish );      
 
 
     httpd_resp_set_type(req, "image/jpeg");
